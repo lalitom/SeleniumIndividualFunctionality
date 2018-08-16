@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class SimpleAlertDemo {
 	static WebDriver driver=null;
-	static String Pathofchromedriver="D:\\chromedriver_win32\\chromedrivernew\\chromedriver.exe";
+	//static String Pathofchromedriver="D:\\chromedriver_win32\\chromedrivernew\\chromedriver.exe";
 	public static void main (String args[]) throws InterruptedException
 	{
 		System.out.println("Simple Alert Demo------->");
@@ -50,7 +50,7 @@ public class SimpleAlertDemo {
 	static void setup()
 	{
 		String url="http://toolsqa.wpengine.com/handling-alerts-using-selenium-webdriver/";
-		System.setProperty("webdriver.chrome.driver",Pathofchromedriver);
+		System.setProperty("webdriver.chrome.driver",Common.chromepath);
 		driver=new ChromeDriver();
 		driver.get(url);
 		driver.manage().window().maximize();
