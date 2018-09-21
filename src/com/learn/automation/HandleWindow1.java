@@ -13,7 +13,7 @@ public class HandleWindow1 {
 	{
 		
 		String url="http://seleniumpractise.blogspot.com/2017/07/multiple-window-examples.html";
-		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedrivernew\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:\\allBrowserDrivers\\chromedrivernew\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.get(url);
 		String parent=driver.getWindowHandle();

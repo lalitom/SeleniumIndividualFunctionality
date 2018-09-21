@@ -14,6 +14,7 @@ public class FirefoxBrowser {
 		System.setProperty("webdriver.gecko.driver", "D:\\chromedriver_win32\\geckodriver-v0.20.1-win64\\geckodriver.exe");
 		WebDriver driver =new FirefoxDriver();
 		driver.get("http://www.google.com");
+		driver.close();
 	
 		
 	}
